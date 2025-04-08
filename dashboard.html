@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <input type="checkbox" name="" id="sidebar-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-flex">
+                <img src="logo.png" width="120px" alt="logo">
+                <div class="brand-icons">
+                    <span class="las la-bell"></span>
+                    <span class="las la-user-circle"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-main">
+            <div class="sidebar-user">
+                <img src="user.png" width="90px" alt="user">
+                <div>
+                    <h3>UserName</h3>
+                    <span>user@gmail.com</span>
+                    <h3>Farm Name</h3>
+                </div>
+            </div>
+
+            <ul class="sidebar-menu">
+                <div class="menu-head"><span>Overview</span></div>
+                <li><a href=""><span class="las la-thermometer"></span> System Status</a></li>
+                <li><a href=""><span class="las la-diagnoses"></span> Total Cases Detected</a></li>
+                <li><a href=""><span class="las la-percentage"></span> Accuracy</a></li>
+                <li><a href=""><span class="las la-file-medical"></span> Last Scan Summary</a></li>
+
+                <div class="menu-head"><span>Live Data & Monitoring</span></div>
+                <li><a href=""><span class="las la-video"></span> Real-time Camera Feed</a></li>
+                <li><a href=""><span class="las la-list-alt"></span> Current Readings</a></li>
+                <li><a href=""><span class="las la-history"></span> Recent Detections</a></li>
+
+                <div class="menu-head"><span>Detection Analytics</span></div>
+                <li><a href=""><span class="las la-chart-line"></span> Symptoms Trends</a></li>
+                <li><a href=""><span class="las la-map-marked"></span> Geo Spread</a></li>
+                <li><a href=""><span class="las la-chart-bar"></span> Severity Distribution</a></li>
+                <li><a href=""><span class="las la-exchange-alt"></span> Comparison Analysis</a></li>
+
+                <div class="menu-head"><span>User Controls</span></div>
+                <li><a href=""><span class="las la-folder-open"></span> Scan History</a></li>
+                <li><a href=""><span class="las la-play-circle"></span> Manual Scan Options</a></li>
+                <li><a href=""><span class="las la-bell"></span> Notification Settings</a></li>
+                <li><a href=""><span class="las la-file-export"></span> Report Generation</a></li>
+
+                <div class="menu-head"><span>User & System Management</span></div>
+                <li><a href=""><span class="las la-user"></span> User Profile</a></li>
+                <li><a href=""><span class="las la-network-wired"></span> Device Connectivity</a></li>
+                <li><a href=""><span class="las la-file-alt"></span> System Logs</a></li>
+
+                <div class="menu-head"><span>Alerts & Recommendations</span></div>
+                <li><a href=""><span class="las la-exclamation-triangle"></span> Critical Alerts</a></li>
+                <li><a href=""><span class="las la-notes-medical"></span> Treatment Suggestions</a></li>
+                <li><a href=""><span class="las la-shield-alt"></span> Preventive Measures</a></li>
+
+                <div class="menu-head"><span>Additional Features</span></div>
+                <li><a href=""><span class="las la-temperature-high"></span> Temperature Monitoring</a></li>
+                <li><a href=""><span class="las la-seedling"></span> Feeding Behavior Tracking</a></li>
+                <li><a href=""><span class="las la-procedures"></span> Quarantine Suggestions</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <label for="sidebar-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+            </div>
+            <div class="header-icons">
+                <span class="las la-search"></span>
+                <span class="las la-bookmark"></span>
+                <span class="las la-sms"></span>
+            </div>
+        </header>
+
+        <main>
+            <div class="page-header">
+                <div>
+                    <h1>Avian Colibacillosis Detection Software</h1>
+                    <small>Track poultry count, health, and environment. Review reports and insights on disease trends
+                        for better management.</small>
+                </div>
+                <div class="header-actions">
+                    <button><span class="las la-file-upload"></span> Upload</button>
+                    <button><span class="las la-tools"></span> Settings</button>
+                </div>
+            </div>
+
+            <!-- Ensure cards are outside the .page-header div -->
+            <div class="cards">
+                <div class="card-single">
+                    <div class="card-flex">
+                        <div class="card-info">
+                            <div class="card-head">
+                                <span>Birds</span>
+                                <small>Bird Count in House</small>
+                            </div>
+                            <h2>0</h2>
+                            <small>0% available</small>
+                        </div>
+                        <div class="card-chart sucess">
+                            <span class="las la-chart-line">
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div class="card-flex">
+                        <div class="card-info">
+                            <div class="card-head">
+                                <span>Unusual Activities</span>
+                                <small>Number of Unusual Activities</small>
+                            </div>
+                            <h2>0</h2>
+                            <small>0% than usual</small>
+                        </div>
+                        <div class="card-chart sucess">
+                            <span class="las la-chart-line">
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div class="card-flex">
+                        <div class="card-info">
+                            <div class="card-head">
+                                <span>Cases Detected</span>
+                                <small>Number of Birds Detected</small>
+                            </div>
+                            <h2>0</h2>
+                            <small>0% than usual</small>
+                        </div>
+                        <div class="card-chart sucess">
+                            <span class="las la-chart-line">
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div class="card-flex">
+                        <div class="card-info">
+                            <div class="card-head">
+                                <span>Resolved Cases</span>
+                                <small>Resolved Cases</small>
+
+                            </div>
+                            <h2>0</h2>
+                            <small>0% than usual</small>
+                        </div>
+                        <div class="card-chart sucess">
+                            <span class="las la-chart-line">
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Control and Recommendations -->
+            <div class="recommendations-grid">
+                <div class="analytics-cards">
+                    <div class="analytics-head">
+                        <h3>Detection Accuracy</h3>
+                        <span class="las la-ellipsis-h"></span>
+                    </div>
+                    <div class="analytics-charts">
+                        <div class="chart-circle">
+                            <h1>100%</h1>
+                        </div>
+                        <div class="analytics-note">
+                            <small>Note: Accuracy varies by breed and symptoms.</small>
+                        </div>
+                    </div>
+                    <div class="analytics-btn">
+
+                    </div>
+                </div>
+                <div class="recommemdations">
+                    <h2>Recommendations <small>See all expert recommendations from our vet.<span
+                                class="las la-arrow-right"></span></small></h2>
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <span class="indicator"></span>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div>
+                                        Biosecurity
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>Limit access, sanitize equipment, and deter wild birds.</div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <button>More Details</button>
+                                    </div>
+
+                                </td>
+
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <span class="indicator"></span>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div>
+                                        Nutrition & Water
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>Ensure ventilation, hygiene, and space.</div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <button>More Details</button>
+                                    </div>
+
+                                </td>
+
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <span class="indicator"></span>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div>
+                                        Vaccination
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>Follow a set vaccine schedule.</div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <button>More Details</button>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <span class="indicator"></span>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div>
+                                        Environmental Control
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>Maintain proper ventilation, hygiene, and space management.</div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <button>More Details</button>
+                                    </div>
+
+                                </td>
+
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <span class="indicator"></span>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div>
+                                        Health Monitoring
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>Track symptoms, record data, and detect diseases early.</div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <button>More Details</button>
+                                    </div>
+
+                                </td>
+
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </main>
+    </div>
+</body>
+
+</html>
